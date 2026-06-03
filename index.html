@@ -1,1 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name | Portfolio</title>
 
+<style>
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background: rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.hero p {
+    color: #cbd5e1;
+    max-width: 600px;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: white;
+    color: black;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    padding: 80px 10%;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.card a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    padding: 8px 15px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div><strong>Your Name</strong></div>
+    <div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Your Name</h1>
+    <p>I build modern websites and web apps using HTML, CSS and JavaScript.</p>
+    <a class="btn" href="#projects">View My Work</a>
+</section>
+
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            I am a web designer and developer passionate about building clean, fast, and modern websites.
+        </p>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Calculator</h3>
+            <p>Simple calculator built with HTML, CSS, JS.</p>
+            <a href="https://github.com/YOUR_USERNAME/calculator" target="_blank">GitHub →</a>
+        </div>
+
+        <div class="card">
+            <h3>Snake Game</h3>
+            <p>Nokia-style snake game.</p>
+            <a href="https://github.com/YOUR_USERNAME/snake-game" target="_blank">GitHub →</a>
+        </div>
+
+        <div class="card">
+            <h3>More Projects</h3>
+            <p>Add your future projects here.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: your@email.com</p>
+        <p>GitHub: github.com/YOUR_USERNAME</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Your Name. Built with GitHub Pages.
+</footer>
+
+</body>
+</html>
